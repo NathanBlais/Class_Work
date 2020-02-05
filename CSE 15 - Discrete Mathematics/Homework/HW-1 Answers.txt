@@ -1,0 +1,33 @@
+Nathan BlaisCSE 015-0108/27/18				HW-1 AnswersSection 1.110 (d):  q → pIf the votes have been counted, then the election is decided(e): ¬q → ¬pIf the votes have not been counted, then the election has not been decided(f ): ¬p → ¬qIf the election has not been decided, then the votes have not been counted12 (c): q → ¬rYou missed the final examination implies that you did not pass the course(e): (p → ¬r) ⋁ (q → ¬r)If you have the flu, then you didn’t pass the course or if you missed the final examination, then you didn’t pass the course. 22 (a):If someone washes their boss’s car, then they will get a promotion.(b):If winds come from the south, then there is a spring thaw.(c):If the warranty is good, then the computer was purchased less than a year ago.(d):If Willy cheats, then he gets caught.(e):If you access the website, then you pay the subscription fee.(g):If Carol is on a boat, then she gets seasick.Section 1.2 4
+(d∧s) → W16(a)The question will be answered the same way regardless of the type of cannibal.(b)A question could be “Are you a cannibal?” The truthful ones will say yes, were the liars will say no.36(a)John would have done it. If only one person was to tell the truth, it would be Diana. If we assume John did it, then Alice and Carlos would have lied. Leaving only Diana as the truth teller.A	J	C	DF	F	F	T(b)Carlos would have done it. If Alice told the truth, that would mean Carlos lied about Diana, that Diana is truthful about being blamed, and that John is truthful about not doing it.A	J	C	DT	T	F	TSection 1.3 10(a) [¬p∧(p∨q)]→q
+
+p	q	¬p	(p∨q)  	 ¬p∧(p∨q)	[¬p∧(p∨q)]→q
+T	T	 F	 T	    F		     T
+T	F	 F	 T	    F		     T
+F	T	 T	 T	    T		     T
+F	F	 T	 F	    F		     T(b) [(p→q)∧(q→r)]→(p→r)
+
+p	q	r	(p→q)	(q→r)	(p→r)	[(p→q)∧(q→r)]→(p→r)
+T	T	T	  T	  T	  T		T
+T	T	F	  T	  F	  F		T
+T	F	T	  F	  T	  T		T
+T	F	F	  F	  T	  F		T
+F	T	T	  T	  T	  T		T
+F	T	F	  T	  F	  T		TF	F	T	  T	  T	  T		T
+F	F	F	  T	  T	  T		T
+
+(c) [p∧(p→q)]→q
+
+p	q	(p→q)	[p∧(p→q)]	[p∧(p→q)]→q
+T	T	  T	   T		    T
+T	F	  F	   F		    T
+F	T	  T	   F		    T
+F	F	  T	   F		    T20 Show that ¬(p ⊕ q) and p ↔ q are logically equivalent.
+
+p	q	(p ⊕ q)		¬(p ⊕ q)	p ↔ q
+T	T	   F		    T		  T
+T	F	   T		    F		  F
+F	T	   T		    F 		  F
+F	F	   F		    T		  T
+
+  The proposition p ↔ q is true when p ⊕ q is false, which means that p and q have different truth values. Because this is precisely when ¬(p ⊕ q) is true, the two expressions are logically equivalent. 

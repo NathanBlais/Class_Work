@@ -1,0 +1,233 @@
+Nathan BlaisCSE 015-0109/12/18
+
+				HW-2 Answers
+
+Section 1.4
+
+6 
+
+(d)
+There is at lest one student in your school who has not visited North Dakota.
+
+(e)
+Not all students in your school have visited North Dakota.
+
+(f)
+All the students in your school have not visited North Dakota.
+
+8 
+
+(c)
+There exists an animal such that if it is a rabbit, it hops.
+
+(d)
+Some rabbits hop.
+
+10
+
+(a)
+∃x(C(x)∧D(x)∧F(x))
+
+(c)
+∃x(C(x)∧F(x)∧¬D(x))
+
+(e)
+(∃xC(x))∧(∃xD(x))∧(∃xF(x))
+ 
+14 
+
+(a)
+True
+
+(b)
+True
+ 
+24 
+
+Let C(x) be the propositional function “x is in your class.” <-applies to (c) and (d)
+
+(c)
+Let S(x) be the propositional function “x can swim."
+
+answer 1) ∃x(¬S(x))
+answer 2) ∃x(C(x)∧¬S(x))
+
+(d)
+Let Q(x) be the propositional function “x can solve quadratic equations.
+
+answer 1) ∀x(Q(x))
+answer 2) ∀x(C(x)→Q(x))
+ 
+28 
+
+Let P(x) be the propositional function “x is in the correct place"<-applies to (a) and (b) 
+
+(a)
+
+∃x(¬P(x))
+
+(b) 
+The domain consists of all physical objects.
+Let T(x) be the propositional function “x is a tool"
+Let E(x) be the propositional function “x is in excellent condition."
+
+∀x(T(x)→P(x)∧Q(x))
+
+34
+
+(c)
+The domain consist of all people.
+Let S(x) be the propositional function “x can keep a secret"
+
+¬∃x(S(x)) -> ¬(¬∃x(S(x)))
+
+answer: ∃x(S(x))
+english:Someone can keep a secret.
+
+(d)
+Let the domain be people is in this class
+Let A(x) be the propositional function “x does have a good attitude"
+
+∃x(¬A(x)) -> ¬(∃x¬A(x))
+ 
+answer: ∀x(A(x)) 
+english: Everybody in this class has a good attitude.
+
+40 
+
+(a)
+Let D(x) be the propositional function "Hard disk x has less then 30 megabytes free"
+Let W(y) be the propositional function "waning message is sent to y user"
+
+answer: ∃xD(x)→∀yW(y)
+
+(b) No directories in the file system can be opened and no files can be closed when system errors have been detected.
+Let D(x) be the propositional function "directory x in file system can be opened"
+Let F(y) be the propositional function "file y can be closed"
+Let S(z) be the propositional function "system error z has been detected"
+
+answer: ∃zS(z)→[∀x(¬D(x))∧∀y(¬F(y))]
+
+42 
+
+(c)
+Let F(x) be the propositional function "firewall x is in a diagnostic state"
+Let P(x) be the propositional function "proxy server x is in a diagnostic state"
+
+answer: ∀x(F(x)→P(x))
+
+(d) 
+
+Let R(x) be the propositional function "router x is functioning normally"
+Let T(y) be the propositional function "throughput of y is between 100 kbps and 500 kbps"
+Let P(y) be the propositional function "proxy server y is in diagnostic mode"
+
+∃y(T(y)∧¬P(y))→∃xR(x)
+
+
+Section 1.5
+
+4
+
+(b) ∃x∀y P(x, y)
+
+answer: Some student in my class has taken all computer science courses at my school.
+
+(c) ∀x∃y P(x, y)
+
+answer: All students in my class have taken at least one computer science course at my school.
+
+(d) ∃y∀x P(x, y)
+
+answer: There is a computer science course that every student in my class has taken.
+ 
+8 
+
+(a) ∃x∃y Q(x,y)
+
+
+(b) ¬∃x∃y Q(x,y)
+
+12 
+
+(f) ∃x ¬I(x)
+
+
+(g) ¬∀x I(x)
+
+
+(i) ∀x(I(x) ∧ ∃!y(x≠y → ¬I(y)))
+
+
+18 
+
+(a) 
+Let P(x,y) be the propositional function "x console must be accessible during y
+fault condition."
+
+answer: ∀y∃xP(x,y)
+
+(c) 
+
+Let Q(x,y) be the propositional function "For x security breach there (is/are) y mechanism that can detect that breach"
+
+Let R(z) be the propositional function "process X that has been compromised"
+
+answer: ∀y∃xQ(x,y) ↔ ∃z¬R(z)
+
+
+24
+
+(a) ∃x∀y(x+y=y)
+
+answer: For some real number x and for every real number y there exists an x such that x+y=y is true for every y.
+
+(b) ∀x∀y(((x≥0)∧(y<0))→(x−y>0))
+
+answer: For all real numbers x and for all real numbers y, all vales of positive x, including 0, and all vales of negative y imply that x−y is a positive real number.
+
+28
+
+(c) ∃x∀y(xy=0)
+
+answer: True
+
+(d) ∃x∃y(x+y≠y+x)
+
+answer: False
+
+(e) ∀x(x≠0→∃y(xy=1))
+
+answer: True
+
+30
+
+(a) ∀y∀x¬P(x,y)
+
+
+(b) ∃x∀y¬P(x,y)
+
+
+(c) ∀y(¬Q(y)∧∃xR(x,y))
+ 
+36
+
+
+(a) No one has lost more than one thousand dollars playing the lottery.
+
+Let L(x) be the propositional function "x has lost more than one thousand dollars playing the lottery"
+quantifier: ¬∃xL(x)
+
+negation: ∃xL(x)
+
+negation in English: There exists a person who has lost more than one thousand dollars playing the lottery
+
+
+(b) There is a student in this class who has chatted with exactly one other student.
+
+Let C(x,y) be the propositional function "x has chatted with y"
+quantifier: ∃x∃!y [C(x,y)∧ x≠y] or ∀z∃x∃y[(C(x,y)∧(y≠x)) ∧ (C(x,z)→(z=x)∨(z=y))]
+
+negation: ∃z∀x∀y[(¬C(x,y)∨(y=x)) ∨ (C(x,z)∧(z≠x)∧(z≠y)]
+
+negation in English: All students have chased with only themselves or with more that two people.
