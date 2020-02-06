@@ -1,0 +1,33 @@
+Nathan Blais
+CSE 31-01
+Lab_5
+10/03/2018
+
+Q1.
+
+.data - starts the data segment
+
+.word - is used to allocate and initialize space for a variable
+
+.text - starts the text segment
+
+
+Q2. You click the checkbox on the line you want the break in the Text Segment window.
+
+There is no command.
+
+Q3.
+
+To execute your code you program you press the play button. To execute your code you program one step at a time, you press the play button with a one next to it.
+
+Q4. You find the contents of a register in the spreadsheet on the right hand side. To modify the value of a register you double click the value you want to change.
+
+Q5. The address in memory is 0x10010000
+
+Q6. syscall is an instruction that provides a set of operating-system-like services.
+
+To use SYSCALL system services
+Step 1. Load the service number in register $v0. 
+Step 2. Load argument values, if any, in $a0, $a1, $a2, or $f12 as specified.
+Step 3. Issue the SYSCALL instruction. 
+Step 4. Retrieve return values, if any, from result registers as specified.

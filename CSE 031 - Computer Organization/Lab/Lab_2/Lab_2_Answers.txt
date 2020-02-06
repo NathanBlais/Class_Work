@@ -1,0 +1,49 @@
+Nathan Blais
+CSE 31-01
+Lab_2
+09/12/2018
+
+Q1. (gdb) run
+
+Q2. (gdb) run arg_1 arg_2
+
+Q3. 
+
+To break by line: 
+	$ (gdb) break app_name.c:Number_of_line
+To break by funtion:
+	$ (gdb) break app_name.c:funtion_name
+To break by instruction:
+	$ (gdb) break *machine_instruction
+
+Q4. (gdb) break . . . if expr
+
+Q5. n [count]
+
+Q6. s [count]
+
+Q7. c [count]
+
+Q8. p expr
+
+Q9. display [ / f ] expr
+
+Q10. info args
+     info local
+
+Q11. ctrl d
+
+Q12. The passed string was missing a null character at the end.
+
+Q13. On line 15, instead of passing 'input' as a reference, you pass its value.
+
+Q14. to fix it you change it to &input
+
+Q15. The problem is that you are not passing back sum by reference.
+	To fix it you need to change:
+
+Line 07 to: int read_values(double *sum) {
+Comment out line 9
+Line 14 to:   *sum += input;
+Line 23 to: values = read_values(&sum);
+

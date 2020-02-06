@@ -1,0 +1,19 @@
+Nathan Blais
+CSE 31-01
+Lab_4
+09/26/2018
+
+Q1. Because when strcat() concatenates the second string to the first, it writes to the existing array. Because the array is too small, it does not output properly.
+
+Q2. One way to fix the bug is to allocate more memory than is needed.
+
+Ex: char hello[20] = "hello ";
+
+Q3. To run a program you use the command "run". 
+
+C doesn't provide the same kind of bounds-checking on arrays that Java does because that leads to inefficiency. It assumes you will write the code properly yourself.
+
+Q4. 
+
+Pro: efficiency
+Con: No error corection.

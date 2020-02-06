@@ -1,0 +1,13 @@
+1. How would you change the executable name from main to cselab?
+
+mv main cselab
+
+
+2. What happens when you compile using gcc <source> only?
+
+You get a file called "a.out"
+
+
+3. Add comments to your program.
+
+/* */ or //

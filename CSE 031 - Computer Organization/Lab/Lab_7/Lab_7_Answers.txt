@@ -1,0 +1,13 @@
+Nathan Blais
+CSE 31-01
+Lab_7
+10/31/2018
+
+
+Q1. The bug in swap2.s is that the temp pointer is dereferenced without being initialized. Why might a programmer not notice this even after testing the buggy swap? In other words: what situation would allow buggy swap to seem to work correctly?
+
+answer:If the if the junk in temp is valid and the address is within the scope.
+
+Q2. Explain how you guarantee it crashing with what is in proc.
+
+answer:By assigning x to 0 on the stack it ensures that it will read an invalid address because the 0 address will lead to a null pointer exception segmentation fault.

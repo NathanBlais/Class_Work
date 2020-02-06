@@ -1,0 +1,103 @@
+ Nathan Blais
+CSE 31-01
+Lab_6
+10/15/2018
+
+
+Q1. How many bugs are there?
+answer:There are 2 bugs
+
+Q2. How do you fix the bug(s)?
+answer: The bugs are on lines 14 & 15. To fix them you need to change the 1 immediate to 4.
+
+Q3. What is your strategy to finding the bug(s)?
+answer: My strategy was to read and understand the code first. Then I looked for any syntax or logic bugs. I saw the 1 (I knew that multiples of 4 are needed to increment) and ran the program to see when the error occurred.
+
+Q4.
+answer:$9
+
+Q5.
+answer:$10
+
+Q6. What instruction is used to load the address of source and dest pointers?
+answer: The 'la' instruction 
+
+Q7. Where does the loop to copy values start? (give line # and the first instruction and/or label of where it is)
+answer: line 35 at '$L6:	       '
+		   '     addu	$8,$8,1'
+
+Q8.Explain what each line in the loop is trying to do in the following format:
+
+Instruction : add $4, $0, $0 (as an example)
+Purpose : 
+Corresponding C : 
+
+answer: ?????
+
+35	addu	$8,$8,1
+36	sll	$3,$8,2
+37	addu	$5,$7,$9
+38	addu	$2,$3,$9
+39	addu	$6,$7,$10
+40	lw	$4,0($2)
+41	move	$7,$3
+42	lw	$3,0($5)
+43	#nop
+44	sw	$3,0($6)
+45	bne	$4,$0,$L6
+
+
+line 35:
+Instruction : addu   $8,$8,1
+Purpose : increment $8 by one.
+Corresponding C : k++
+
+line 36:
+Instruction : sll    $3,$8,2
+Purpose : store $8 shifted left by 2 into $3, similar to multiplication.
+Corresponding C : no equivalent
+
+line 37:
+Instruction : addu   $5,$7,$9
+Purpose : add unsigned $7 and $9 and save it into $5
+Corresponding C : no equivalent
+
+line 38:
+Instruction : addu   $2,$3,$9
+Purpose : add unsigned $2 and $9 and save it into $2
+Corresponding C : no equivalent
+
+line 39:
+Instruction : addu   $6,$7,$10 
+Purpose : add unsigned $7 and $10 and save it into $6
+Corresponding C : no equivalent
+
+line 40:
+Instruction : lw     $4,0($2) 
+Purpose : load word stored in $2 into $4
+Corresponding C : source[k]
+
+line 41:
+Instruction : move   $7,$3
+Purpose : move the $3 value into $7
+Corresponding C : dest[k] = source[k];
+
+line 42:
+Instruction : lw     $3,0($5)
+Purpose : load word stored in $5 into $3
+Corresponding C : no equivalent
+
+line 43:
+Instruction : #nop
+Purpose : to do nothing or $zero, $zero, 0
+Corresponding C : nothing corresponds.
+
+line 44:
+Instruction : sw  $3,0($6)
+Purpose : store word stored in $6 into $3
+Corresponding C : no equivalent
+
+line 45:
+Instruction : bne  $4,$0,$L6
+Purpose : checks if $4 is not equal to zero, and if it is, jump to $L6
+Corresponding C : source[k]!=0
